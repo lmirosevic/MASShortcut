@@ -5,7 +5,7 @@
 @interface MASShortcutDefaultsObserver : NSObject
 
 @property (nonatomic, readonly) NSString *userDefaultsKey;
-@property (nonatomic, readonly, weak) MASShortcutView *shortcutView;
+@property (nonatomic, readonly, unsafe_unretained) MASShortcutView *shortcutView;
 
 - (id)initWithShortcutView:(MASShortcutView *)shortcutView userDefaultsKey:(NSString *)userDefaultsKey;
 

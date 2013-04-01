@@ -5,7 +5,7 @@
 
 @property (nonatomic, readonly) NSString *userDefaultsKey;
 @property (nonatomic, copy) void (^handler)();
-@property (nonatomic, weak) id monitor;
+@property (nonatomic, unsafe_unretained) id monitor;
 
 - (id)initWithUserDefaultsKey:(NSString *)userDefaultsKey handler:(void (^)())handler;
 
